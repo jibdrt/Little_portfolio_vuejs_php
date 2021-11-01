@@ -1,11 +1,32 @@
+const projects = [
+    { id: 1, description: "Exemple"},
+    { id: 2, description: "Exemple2"},
+    { id: 3, description: "Exemple3"},
+    { id: 4, description: "Exemple4"},
+    { id: 5, description: "Exemple5"},
+    { id: 6, description: "Exemple6"},
+    { id: 7, description: "Exemple7"},
+    { id: 8, description: "Exemple8"}
+  ];
+
+
+
 const Home = {
     template: '#home',
     name: 'Home'
 }
+
 const Projets = {
     template: '#projets',
-    name: 'Projets'
-}
+    name: 'Projets',
+    data: () => {
+        return {
+        projects
+            }
+        }
+    }
+
+
 const Contact = {
     template: '#contact',
     name: 'Contact'
@@ -50,3 +71,5 @@ const router = new VueRouter({
 const vue = new Vue({
     router
 }).$mount('#app');
+
+

@@ -37,6 +37,11 @@ li a:hover{
   margin-right: 180px !important;
 }
 
+.custom-hr{
+    color: white;
+    background-color: #fff;
+    box-shadow: 12px 12px 20px white;
+}
 
 .home-container, .projects-container, .about-container, .contact-container{
     width: 100vw;
@@ -44,6 +49,20 @@ li a:hover{
     background-color: #222222;
 }
 
+.projects-container{
+    text-align: center;
+}
+
+.card-container:hover{
+    box-shadow: 1px 1px 8px white;
+    transform: scale(1.05);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.card-container:not(:hover){
+    transition: .4s;
+}
 
 .container-title{
     color: white;
@@ -52,7 +71,13 @@ li a:hover{
     margin-top: 5vh;
 }
 
-
+.card-container{
+    height: 240px;
+    width: 180px;
+    border: 1px white solid;
+    display: inline-block;
+    margin: 80px;
+}
 
 
 *{
