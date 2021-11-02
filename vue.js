@@ -44,7 +44,7 @@ Vue.component('about-content',{
 
 
 Vue.component('home-title', {
-    template: '<h1>ACCUEIL</h1>'
+    template: '<h1></h1>'
   })
 
 
@@ -73,18 +73,19 @@ const router = new VueRouter({
 
 
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.marginTop = "0";
+/* =====mobile-navigation==== */
+
+function test() {
+  var x = document.getElementById("nav");
+  if (x.style.display === "none") {
+    x.style.marginTop
+    x.style.display = "block";
   } else {
-    document.getElementById("navbar").style.marginTop = "-50px";
+    x.style.display = "none";
   }
-  prevScrollpos = currentScrollPos;
 }
 
-
+/* ============================== */
 
 
 const vue = new Vue({

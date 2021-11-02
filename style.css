@@ -4,6 +4,9 @@
 
 
 
+.mobile-nav{
+    border-right: 1px white solid !important;
+}
 
 
 ul {
@@ -141,7 +144,14 @@ html {
 
 /* ====== */
 
-
+#navicon{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    float: right;
+    cursor: pointer;
+}
 
 
 
@@ -155,6 +165,12 @@ html {
     .mobile-nav>a{
         width: 95vw !important;
         padding: auto !important;
+    }
+    .container-mobile-nav{
+        display: none;
+    }
+    #navicon{
+        display: block !important;
     }
 
   }
