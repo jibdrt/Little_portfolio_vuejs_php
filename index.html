@@ -11,29 +11,28 @@
 
 <div id="app">
 <nav>
+    
     <ul>
 
         <router-link to="/">
-            <li><a>Accueil</a></li>
+            <li class="mobile-nav"><a>Accueil</a></li>
         </router-link>
 
         <router-link to="/projets">
-            <li><a>Projets</a></li>
+            <li class="mobile-nav"><a>Projets</a></li>
         </router-link>
 
 
         <router-link to="/about">
-            <li><a>About</a></li>
+            <li class="mobile-nav"><a>À propos</a></li>
         </router-link>
 
         <router-link to="/contact">
-            <li><a>Contact</a></li>
+            <li class="mobile-nav"><a>Contact</a></li>
         </router-link>
 
-            
-
-
       </ul>
+
       
       <router-view></router-view>
 </nav>
@@ -61,8 +60,10 @@
 
 
 
-                <div v-for="project in projects" class="card-container">
-                        <p> {{product}} </p>
+                <div v-for="project in projects"        class="card-container">
+                        <p class="project-title" v-html="project.title"></p>
+
+
 <!--                     <div class="img-container">
                       <img v-bind:src="product.img" alt="">
                     </div> -->
@@ -81,8 +82,13 @@
             <h1 class="container-title">
                     <about-title></about-title>
             </h1>
+            
+            <span class="about-content">
+                <about-content></about-content>
+            </span>
 
     </div>
+
 </script>
 
 <script type="text/x-template" id="contact">

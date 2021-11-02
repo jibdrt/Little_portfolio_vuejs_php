@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -10,6 +13,7 @@ ul {
   overflow: hidden;
   background-color: #222222;
 }
+
 
 li {
   float: left;
@@ -37,11 +41,6 @@ li a:hover{
   margin-right: 180px !important;
 }
 
-.custom-hr{
-    color: white;
-    background-color: #fff;
-    box-shadow: 12px 12px 20px white;
-}
 
 .home-container, .projects-container, .about-container, .contact-container{
     width: 100vw;
@@ -58,6 +57,7 @@ li a:hover{
     transform: scale(1.05);
     transition: .4s;
     cursor: pointer;
+    border-radius: 10%;
 }
 
 .card-container:not(:hover){
@@ -69,15 +69,50 @@ li a:hover{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
+
 .card-container{
-    height: 240px;
+    height: 180px;
     width: 180px;
     border: 1px white solid;
     display: inline-block;
     margin: 80px;
+    border-radius: 100%;
 }
+
+.project-title{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 25%;
+}
+
+
+
+/* Specific to about */
+
+.about-content>p{
+    width: 600px;
+    margin-top: 20vh;
+    margin-left: 10vw !important;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 24px;
+}
+
+
+@media screen and (max-width: 675px) {
+    .about-content>p, .about-content{
+        font-size: 22px !important;
+        width: 70vw !important;
+
+    }
+}
+
+
+/* ====end specific to about====*/
+
 
 
 *{
@@ -85,3 +120,41 @@ li a:hover{
     margin: 0;
     overflow-x: hidden;
 }
+
+
+/* ====navigation===== */
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+button{
+    outline: none !important;
+}
+
+html {
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        scroll-behavior: smooth !important;  
+}
+
+
+/* ====== */
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    body{
+        background-color: #222222;
+    }
+    .ul{
+        margin-top: 80px !important;
+    }
+    .mobile-nav>a{
+        width: 95vw !important;
+        padding: auto !important;
+    }
+
+  }
