@@ -59,7 +59,42 @@ Vue.component('home-title', {
 
   Vue.component('contact-title', {
     template: '<h1>CONTACT</h1>'
-  })  
+  })
+
+
+
+  Vue.component('footer-style',{
+    template:`
+     <div id="container">
+     <hr id="container-hr">
+      <div id="contacts">
+        <div id="contacts--contact">
+          <p>{{ mail }}</p>
+          <p>{{ phone }}</p>
+        </div>
+        <div id="contacts--social">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div id="mentions">
+        <p>{{ mention }}</p>
+      </div>
+     </div>
+    `,
+    
+    data(){
+      return{
+        mail : 'jbdruet@mail.fr',
+        phone : '06.00.00.00.00',
+        mention : 'Jean-Baptiste Druet'
+      }
+    }
+  });
+  
+  new Vue({
+    el:'#root',
+  })
 
 
 const router = new VueRouter({
@@ -91,5 +126,6 @@ function test() {
 const vue = new Vue({
     router
 }).$mount('#app');
+
 
 

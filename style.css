@@ -56,15 +56,15 @@ li a:hover{
 }
 
 .card-container:hover{
-    box-shadow: 1px 1px 8px white;
-    transform: scale(1.05);
-    transition: .4s;
-    cursor: pointer;
-    border-radius: 10%;
+/*     box-shadow: 1px 1px 8px white !important; */
+    transform: scale(1.05) !important;
+    transition: .4s !important;
+    cursor: pointer !important;
+    border-radius: 10% !important;
 }
 
 .card-container:not(:hover){
-    transition: .4s;
+    transition: .4s !important;
 }
 
 .container-title{
@@ -76,14 +76,33 @@ li a:hover{
 }
 
 
+/* ==============card-container============== */
+
 .card-container{
-    height: 180px;
-    width: 180px;
+    height: 400px;
+    width: 400px;
     border: 1px white solid;
     display: inline-block;
-    margin: 80px;
+    margin-top: 80px !important;
+    margin: 24px;
     border-radius: 100%;
 }
+
+
+@media only screen and (max-width: 995px) {
+    .card-container{
+        height: 240px;
+        width: 240px;
+    }
+}
+
+
+#bg-menu{
+    width: 40px;
+    height: 40px;
+}
+
+
 
 .project-title{
     font-family: 'Roboto', sans-serif;
@@ -91,6 +110,18 @@ li a:hover{
     margin-top: 25%;
 }
 
+/* =========================================================== */
+
+#show-project-btn{
+    margin-top: 80px;
+    font-family: 'Roboto', sans-serif;
+    padding: 16px;
+    color: white;
+    border: 1px white solid;
+    border-radius: 4px;
+    background-color: #222222 !important;
+    cursor: pointer;
+}
 
 
 /* Specific to about */
@@ -116,12 +147,15 @@ li a:hover{
 
 /* ====end specific to about====*/
 
-
+.projects-container{
+    height: 2000px;
+}
 
 *{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+/*     border: 1px red solid; */
 }
 
 
@@ -173,4 +207,52 @@ html {
         display: block !important;
     }
 
+  }
+
+
+
+
+/*   footer */
+
+#container{
+    font-family: 'Roboto', sans-serif;
+    width:100vw;
+    color:white;
+    background-color:#222222;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    height: 200px;
+  }
+  #contacts{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width:100%;
+  }
+  #contacts--contact{
+    text-align:right;
+  }
+  #contacts--social{
+    width:20%;
+    display : flex;
+    justify-content : right;
+
+  }
+  #contacts--social div{
+    height:30px;
+    width:30px;
+    background-color:white;
+    border-radius:50%;
+    margin: 0 24px 0 24px;
+  }
+  #mentions p {
+    font-size:1.5em;
+  }
+
+  #container-hr{
+      width: 100vw;
+      background-color: #fff;
+      color: white;
+      margin-bottom: 40px;
   }
