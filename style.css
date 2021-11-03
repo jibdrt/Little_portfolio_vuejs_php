@@ -2,7 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-
+#nav{
+    display: flex;
+    justify-content: space-around !important;
+}
 
 .mobile-nav{
     border-right: 1px white solid !important;
@@ -216,6 +219,7 @@ html {
 
 #container{
     font-family: 'Roboto', sans-serif;
+    font-weight:400 !important;
     width:100vw;
     color:white;
     background-color:#222222;
@@ -230,15 +234,17 @@ html {
     align-items:center;
     width:100%;
   }
+
   #contacts--contact{
     text-align:right;
   }
+
   #contacts--social{
     width:20%;
     display : flex;
     justify-content : right;
-
   }
+
   #contacts--social div{
     height:30px;
     width:30px;
@@ -256,3 +262,5 @@ html {
       color: white;
       margin-bottom: 40px;
   }
+
+
