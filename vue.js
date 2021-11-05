@@ -1,9 +1,9 @@
 const projects = [
-    { id: 1, title: "Nowher", img: ''},
-    { id: 2, title: "Shape", img: ''},
-    { id: 3, title: "Portfolio-v1", img: ''},
-    { id: 4, title: "Lab-jquery", img: ''},
-    { id: 5, title: "TWP", img: ''}
+    { id: 1, title: "Nowher", url: 'https://adrienr.promo-68.codeur.online/nowher/', detail: "Ce site répond aux problématiques de l'accessibilité numérique tout en abordant le sujet des troubles neurologiques"},
+    { id: 2, title: "Shape", url: 'https://adrienr.promo-68.codeur.online/shape/', detail: "Ce projet est un site d'agence web fictive, réalisé dans le cadre de ma formation en web design et développement web"},
+    { id: 3, title: "Portfolio-v1", url: 'https://jeanbaptisted760.promo-68.codeur.online/backoffice-portfolio/', detail: "Il s'agit de mon premier portfolio développé en HTML, CSS et Javascript administré dynamiquement par un système CRUD développé en PHP"},
+    { id: 4, title: "MANGART", url: '', detail: "Site ecommerce proposant des affiches décoratives issues d'une rencontre entre l'art contemporain et l'univers du manga"},
+    { id: 5, title: "TWP", url: 'https://jeanbaptisted760.promo-68.codeur.online/jb-will/landingpage/index.php', detail: "Site web à l'aspect journalistique traitant des métiers du numérique. Il s'agit de mon premier projet, développé en HTML, CSS et intégrant l'utilisation du framework Bootstrap"}
 /*     { id: 6, description: "Exemple6"},
     { id: 7, description: "Exemple7"},
     { id: 8, description: "Exemple8"} */
@@ -126,6 +126,4 @@ function test() {
 const vue = new Vue({
     router
 }).$mount('#app');
-
-
 

@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+#nav {
+  display: flex;
+  justify-content: space-around !important;
+}
+
+.mobile-nav {
+  border-right: 1px white solid !important;
+}
+
+#bg-menu {
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  width: 120px !important;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+li a:hover {
+  opacity: 0.8;
+}
+
+.active {
+  color: #222222;
+  background-color: #ffffff;
+  margin-right: 180px !important;
+}
+
+.home-container, .projects-container, .about-container, .contact-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #222222;
+}
+
+.projects-container {
+  text-align: center;
+}
+
+.project-title {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-top: 25%;
+}
+
+/* ==============card-container============== */
+.card-container {
+  height: 400px;
+  width: 400px;
+  border: 1px white solid;
+  display: inline-block;
+  margin-top: 80px !important;
+  margin: 24px;
+  border-radius: 100%;
+}
+.card-container:hover {
+  /*     box-shadow: 1px 1px 8px white !important; */
+  /*             transform: scale(1.05) !important; */
+  transition: 0.4s !important;
+  cursor: pointer !important;
+  /*             border-radius: 10% !important; */
+  box-shadow: 1px 0px 48px white !important;
+}
+.card-container:not(:hover) {
+  transition: 0.4s !important;
+}
+
+.container-title {
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.card-btn {
+  margin-top: 3rem;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  background: #222222;
+  border: 1px white solid;
+  color: white;
+}
+.card-btn:hover {
+  /*         transform: scale(1.05) !important; */
+  transition: 0.4s !important;
+  cursor: pointer !important;
+  background-color: white;
+  color: #222222;
+}
+.card-btn:not(:hover) {
+  transition: 0.4s !important;
+}
+
+@media only screen and (max-width: 995px) {
+  .card-container {
+    height: 240px;
+    width: 240px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #txtwhite {
+    margin: 16px 60px 0 60px !important;
+    font-size: 12px !important;
+  }
+}
+/* =========================================================== */
+#show-project-btn {
+  margin-top: 80px;
+  font-family: "Roboto", sans-serif;
+  padding: 16px;
+  color: white;
+  border: 1px white solid;
+  border-radius: 4px;
+  background-color: #222222 !important;
+  cursor: pointer;
+}
+
+/* Specific to about */
+.about-content > p {
+  width: 600px;
+  margin-top: 20vh;
+  margin-left: 10vw !important;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 675px) {
+  .about-content > p, .about-content {
+    font-size: 22px !important;
+    width: 70vw !important;
+  }
+}
+/* ====end specific to about====*/
+.projects-container {
+  height: 2000px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  /*     border: 1px red solid; */
+}
+
+/* ====navigation===== */
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+button {
+  outline: none !important;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth !important;
+}
+
+/* ====== */
+#navicon {
+  display: none;
+  width: 50px;
+  height: 50px;
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background-color: #222222;
+  }
+
+  .ul {
+    margin-top: 80px !important;
+  }
+
+  .mobile-nav > a {
+    width: 95vw !important;
+    padding: auto !important;
+  }
+
+  .container-mobile-nav {
+    display: none;
+  }
+
+  #navicon {
+    display: block !important;
+  }
+}
+/*   footer */
+#container {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400 !important;
+  width: 100vw;
+  color: white;
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+}
+
+#contacts {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+#contacts--contact {
+  text-align: right;
+}
+
+#contacts--social {
+  width: 20%;
+  display: flex;
+  justify-content: right;
+}
+
+#contacts--social div {
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 24px 0 24px;
+}
+
+#mentions p {
+  font-size: 1.5em;
+}
+
+#container-hr {
+  width: 100vw;
+  background-color: #fff;
+  color: white;
+  margin-bottom: 40px;
+}
+
+#txtwhite {
+  color: white;
+  margin: 24px 60px 0 60px !important;
+  font-family: "Roboto", sans-serif;
+}
+
+/* =====================display_project-detail & hide button for mobile======================== */
+.card-container .project-detail {
+  visibility: hidden;
+  background-color: #222222;
+  color: #fff;
+}
+
+.card-container:hover .project-detail {
+  visibility: visible;
+}
+
+.card-container:active .project-detail {
+  visibility: visible;
+}
+
+@media screen and (max-width: 650px) {
+  .project-title {
+    margin-top: 16px !important;
+  }
+
+  .card-btn {
+    display: none !important;
+  }
+}
+a {
+  text-decoration: none !important;
+}
+
+/* ============================================================================ *//*# sourceMappingURL=main.css.map */

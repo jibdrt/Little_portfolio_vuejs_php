@@ -12,6 +12,13 @@
 }
 
 
+#bg-menu{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -58,18 +65,44 @@ li a:hover{
     text-align: center;
 }
 
-.card-container:hover{
-/*     box-shadow: 1px 1px 8px white !important; */
-    transform: scale(1.05) !important;
-    transition: .4s !important;
-    cursor: pointer !important;
-    border-radius: 10% !important;
+.project-title{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 25%;
 }
 
-.card-container:not(:hover){
-    transition: .4s !important;
+
+/* ==============card-container============== */
+
+.card-container{
+
+    
+
+    height: 400px;
+    width: 400px;
+    border: 1px white solid;
+    display: inline-block;
+    margin-top: 80px !important;
+    margin: 24px;
+    border-radius: 100%;
+
+    &:hover{
+        /*     box-shadow: 1px 1px 8px white !important; */
+/*             transform: scale(1.05) !important; */
+            transition: .4s !important;
+            cursor: pointer !important;
+/*             border-radius: 10% !important; */
+            box-shadow: 1px 0px 48px white !important;
+        }
+
+    &:not(:hover){
+        transition: .4s !important;
+    }
 }
 
+
+
+    
 .container-title{
     color: white;
     text-align: center;
@@ -78,19 +111,28 @@ li a:hover{
     margin-bottom: 10vh;
 }
 
+    
 
-/* ==============card-container============== */
-
-.card-container{
-    height: 400px;
-    width: 400px;
-    border: 1px white solid;
-    display: inline-block;
-    margin-top: 80px !important;
-    margin: 24px;
+.card-btn{
+    margin-top: 3rem;
     border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    background: #222222;
+    border: 1px white solid;
+    color: white;
+    
+    &:hover{
+/*         transform: scale(1.05) !important; */
+        transition: .4s !important;
+        cursor: pointer !important;
+        background-color: white;
+        color: #222222;
+    }
+    &:not(:hover){
+        transition: .4s !important;
+    }
 }
-
 
 @media only screen and (max-width: 995px) {
     .card-container{
@@ -99,19 +141,14 @@ li a:hover{
     }
 }
 
+@media screen and (max-width: 650px) {
+    #txtwhite{
+        margin: 16px 60px 0 60px !important;
+        font-size: 12px !important;
+    }
 
-#bg-menu{
-    width: 40px;
-    height: 40px;
 }
 
-
-
-.project-title{
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin-top: 25%;
-}
 
 /* =========================================================== */
 
@@ -124,6 +161,7 @@ li a:hover{
     border-radius: 4px;
     background-color: #222222 !important;
     cursor: pointer;
+
 }
 
 
@@ -146,6 +184,8 @@ li a:hover{
 
     }
 }
+
+
 
 
 /* ====end specific to about====*/
@@ -183,9 +223,8 @@ html {
 
 #navicon{
     display: none;
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
+    width: 50px;
+    height: 50px;
     float: right;
     cursor: pointer;
 }
@@ -263,4 +302,46 @@ html {
       margin-bottom: 40px;
   }
 
+
+#txtwhite{
+    color:white;
+    margin: 24px 60px 0 60px !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+/* =====================display_project-detail & hide button for mobile======================== */
+
+
+.card-container .project-detail {
+    visibility: hidden;
+    background-color: #222222;
+    color: #fff;
+  }
+
+  .card-container:hover .project-detail {
+    visibility: visible;
+  }
+
+  .card-container:active .project-detail {
+    visibility: visible;
+  }
+
+@media screen and (max-width: 650px) {
+    .project-title{
+        margin-top: 16px !important;
+    }
+    .card-btn{
+        display: none !important;
+    }
+}
+
+
+a{
+    text-decoration: none !important;
+}
+
+/* ============================================================================ */
 

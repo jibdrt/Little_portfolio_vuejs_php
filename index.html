@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio JBD</title>
+    <meta name="description" content="Portfolio Jean-Baptiste Druet Web development Web design">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
 <div id="app">
     <div id="navicon" onclick="test()">
-        <img id="bg-menu" src="./assets/img/menu.png" alt="icone du menu de navigation mobile">
+        <img id="bg-menu" src="./assets/img/burger-icon.png" alt="icone du menu de navigation mobile">
     </div>
 <nav>
     
@@ -69,14 +70,19 @@
 
 
 
-
+            
                 <div v-for="project in projects" class="card-container" data-aos="zoom-in">
-                        <p class="project-title" v-html="project.title" ></p>
 
+                        <p class="project-title" v-html="project.title"></p>
 
-<!--                     <div class="img-container">
-                      <img v-bind:src="product.img" alt="">
-                    </div> -->
+                        <a v-bind:href="project.url" target="blank">
+                            <p class="project-detail" id="txtwhite"v-bind="id in project" v-html="project.detail"></p>
+                        </a>
+
+                            <a v-bind:href="project.url" target="blank">
+                                <button class="card-btn">Voir</button>
+                            </a>
+
       
 
                 </div>
