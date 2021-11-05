@@ -38,7 +38,7 @@ const About = {
 
 
 Vue.component('about-content',{
-  template: '<p style="color:white">Originaire de Bourgogne et résidant aujourd’hui à Dijon, j’ai 25 ans.<br><br>Après un master en marketing et management, j’ai décidé de céder à la curiosité en m’orientant dans le domaine du développement web.<br><br>Passionné par ce que je fais, cette prise de décision fût une révélation.<br><br>Intéressé par les créations de toutes sortes, je pratique aussi le dessin et la musique depuis de nombreuses années.</p>'
+  template: '<p style="color:white">Originaire de Bourgogne et résidant aujourd’hui à Dijon, j’ai 25 ans.<br><br>Après un master en marketing et management, j’ai décidé de céder à la curiosité en m’orientant dans le domaine du développement web.<br><br>Passionné par ce que je fais, je suis décidé à travailler dur pour réussir.<br><br>Intéressé par les créations de toutes sortes, je pratique aussi le dessin et la musique depuis de nombreuses années.</p>'
 })
 
 
@@ -127,3 +127,10 @@ const vue = new Vue({
     router
 }).$mount('#app');
 
+
+var pos = document.documentElement;
+
+pos.addEventListener('mousemove', e =>{
+pos.style.setProperty('--x', e.clientX + 'px');
+pos.style.setProperty('--y', e.clientY + 'px');
+});
