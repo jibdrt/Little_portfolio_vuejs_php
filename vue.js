@@ -72,9 +72,9 @@ Vue.component('home-title', {
           <p>{{ mail }}</p>
           <p>{{ phone }}</p>
         </div>
-        <div id="contacts--social">
-          <div><img class="social-icon" src="./assets/img/linkedin.png" alt=""></div>
-          <div><img class="social-icon" src="./assets/img/github.png" alt=""></div>
+        <div id="contacts_social">
+          <a href="https://www.linkedin.com/in/jean-baptiste-druet/"><div class="linkedin_social--icon"></div></a>
+          <a href="https://github.com/jibdrt"><div class="github_social--icon"></div></a>
         </div>
       </div>
       <div id="mentions">
@@ -108,19 +108,18 @@ const router = new VueRouter({
 
 
 
-/* =====mobile-navigation==== */
+/* =====mobile navigation==== */
 
 function test() {
-  var x = document.getElementById("nav");
+  let x = document.getElementById("nav");
   if (x.style.display === "none") {
-    x.style.marginTop
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
 
-/* ============================== */
+/* ============mount vue================== */
 
 
 const vue = new Vue({

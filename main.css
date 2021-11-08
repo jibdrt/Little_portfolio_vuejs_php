@@ -29,9 +29,10 @@ li {
 }
 
 li a {
-  width: 120px !important;
+  width: 25vw !important;
   display: block;
   color: white;
+  border-right: 1px white solid !important;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -164,7 +165,7 @@ li a:hover {
 }
 /* ====end specific to about====*/
 .projects-container {
-  height: 2000px;
+  height: 1600px;
 }
 
 * {
@@ -222,7 +223,11 @@ html {
     display: block !important;
   }
 }
+
+
+
 /*   footer */
+
 #container {
   font-family: "Roboto", sans-serif;
   font-weight: 400 !important;
@@ -246,18 +251,23 @@ html {
   text-align: right;
 }
 
-#contacts--social {
-  width: 20%;
+#contacts_social {
+  width: 20vw;
   display: flex;
   justify-content: right;
 }
 
-#contacts--social div {
+.contacts_social--content {
   height: 80px;
   width: 80px;
   background-color: white;
-  border-radius: 50%;
-  margin: 0 24px 0 24px;
+  border-radius: 100%;
+}
+@media screen and (max-width: 650px) {
+  .contacts_social--content {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
 
 #mentions p {
@@ -350,7 +360,28 @@ a {
 }
 
 /* ==========footer============= */
-.social-icon {
-  width: 40px;
+.linkedin_social--icon {
+  background-image: url("./assets/img/linkedin.png");
+  background-size: contain !important;
+  width: 80px;
+  height: 80px;
   margin: 20px 0 0 20px;
+}
+@media screen and (max-width: 650px) {
+  .linkedin_social--icon {
+    margin: none !important;
+  }
+}
+
+.github_social--icon {
+  background-image: url("./assets/img/github.png");
+  background-size: contain !important;
+  width: 80px;
+  height: 80px;
+  margin: 20px 0 0 20px;
+}
+@media screen and (max-width: 650px) {
+  .github_social--icon {
+    margin: none !important;
+  }
 }/*# sourceMappingURL=main.css.map */
