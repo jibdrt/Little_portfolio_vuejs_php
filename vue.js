@@ -73,8 +73,8 @@ Vue.component('home-title', {
           <p>{{ phone }}</p>
         </div>
         <div id="contacts--social">
-          <div></div>
-          <div></div>
+          <div><img class="social-icon" src="./assets/img/linkedin.png" alt=""></div>
+          <div><img class="social-icon" src="./assets/img/github.png" alt=""></div>
         </div>
       </div>
       <div id="mentions">
@@ -85,8 +85,8 @@ Vue.component('home-title', {
     
     data(){
       return{
-        mail : 'jbdruet@mail.fr',
-        phone : '06.00.00.00.00',
+        mail : '',
+        phone : '',
         mention : 'Jean-Baptiste Druet'
       }
     }
@@ -128,9 +128,14 @@ const vue = new Vue({
 }).$mount('#app');
 
 
+/* ==============light effect================ */
+
 var pos = document.documentElement;
 
 pos.addEventListener('mousemove', e =>{
 pos.style.setProperty('--x', e.clientX + 'px');
 pos.style.setProperty('--y', e.clientY + 'px');
 });
+
+/* =====================contact====================== */
+
