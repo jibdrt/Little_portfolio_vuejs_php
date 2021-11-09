@@ -69,8 +69,7 @@ Vue.component('home-title', {
      <hr id="container-hr">
       <div id="contacts">
         <div id="contacts--contact">
-          <p>{{ mail }}</p>
-          <p>{{ phone }}</p>
+        <p>{{ mention }}</p>
         </div>
         <div id="contacts_social">
           <a href="https://www.linkedin.com/in/jean-baptiste-druet/"><div class="linkedin_social--icon"></div></a>
@@ -78,7 +77,7 @@ Vue.component('home-title', {
         </div>
       </div>
       <div id="mentions">
-        <p>{{ mention }}</p>
+
       </div>
      </div>
     `,
