@@ -13,16 +13,14 @@
 <body>
 
 <div id="app">
-    <div id="navicon" onclick="test()">
+    <div id="navicon" v-on:click="isDisplay = !isDisplay">
         <img id="bg-menu" src="./assets/img/burger-icon.png" alt="icone du menu de navigation mobile">
     </div>
 
 
             <nav>
-                
-                <ul class="container-mobile-nav" id="nav">
 
-
+                <ul v-if="isDisplay" class="container-mobile-nav" id="nav">
 
                     <router-link to="/">
                         <li class="mobile-nav"><a>Accueil</a></li>
@@ -31,7 +29,6 @@
                     <router-link to="/projets">
                         <li class="mobile-nav"><a>Projets</a></li>
                     </router-link>
-
 
                     <router-link to="/about">
                         <li class="mobile-nav"><a>À propos</a></li>
@@ -43,8 +40,8 @@
 
                 </ul>
 
-                
                 <router-view></router-view>
+
             </nav>
 
 
@@ -56,6 +53,22 @@
             <h1 class="container-title">
                     <home-title></home-title>
             </h1>
+
+            <div class="container-effect">
+                <div class="box">
+
+                    <div class="title">
+                        <span class="block"></span>
+                        <h1>Jean-Baptiste Druet<span></span></h1>
+                    </div>
+
+                    <div class="role">
+                        <div class="block"></div>
+                        <p>Dev web</p>
+                    </div>
+
+                </div>
+            </div>
 
     </div>
 
@@ -134,9 +147,8 @@
         </div>
         <div class="button">
 
-            <button class="btnform btn-posnawr" type="reset">Réinitialiser<span></span></button>
-            <button onclick="validate()" class="btnform btn-posnawr" type="submit">Envoyer<span></span></button>
-
+            <button class="btnform" type="reset">Réinitialiser</button>
+            <button onclick="submitalert()" class="btnform" type="submit">Envoyer</button>
             <iframe name="empty" id="empty" style="display: none;"></iframe>
 
             <!-- <input type="submit"> -->

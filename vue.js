@@ -4,9 +4,6 @@ const projects = [
     { id: 3, title: "Portfolio-v1", url: 'https://jeanbaptisted760.promo-68.codeur.online/backoffice-portfolio/', detail: "Il s'agit de mon premier portfolio développé en HTML, CSS et Javascript administré dynamiquement par un système CRUD développé en PHP"},
     { id: 4, title: "MANGART", url: '', detail: "Site ecommerce proposant des affiches décoratives issues d'une rencontre entre l'art contemporain et l'univers du manga"},
     { id: 5, title: "TWP", url: 'https://jeanbaptisted760.promo-68.codeur.online/jb-will/landingpage/index.php', detail: "Site web à l'aspect journalistique traitant des métiers du numérique. Il s'agit de mon premier projet, développé en HTML, CSS et intégrant l'utilisation du framework Bootstrap"}
-/*     { id: 6, description: "Exemple6"},
-    { id: 7, description: "Exemple7"},
-    { id: 8, description: "Exemple8"} */
   ];
 
 
@@ -44,7 +41,7 @@ Vue.component('about-content',{
 
 
 Vue.component('home-title', {
-    template: '<h1></h1>'
+    template: `<h1>PORTFOLIO</h1>`
   })
 
 
@@ -58,7 +55,7 @@ Vue.component('home-title', {
 
 
   Vue.component('contact-title', {
-    template: '<h1>CONTACT</h1>'
+    template: `<h1>CONTACT</h1>`
   })
 
 
@@ -86,7 +83,7 @@ Vue.component('home-title', {
       return{
         mail : '',
         phone : '',
-        mention : 'Jean-Baptiste Druet'
+        mention : ''
       }
     }
   });
@@ -109,20 +106,16 @@ const router = new VueRouter({
 
 /* =====mobile navigation==== */
 
-function test() {
-  let x = document.getElementById("nav");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+
 
 /* ============mount vue================== */
 
 
 const vue = new Vue({
-    router
+    router,
+    data: {
+      isDisplay: true
+    }
 }).$mount('#app');
 
 
@@ -137,3 +130,6 @@ pos.style.setProperty('--y', e.clientY + 'px');
 
 /* =====================contact====================== */
 
+function submitalert(){
+  alert ("Message envoyé");
+}
