@@ -3,10 +3,10 @@ const projects = [
     { id: 2, title: "Shape", url: 'https://adrienr.promo-68.codeur.online/shape/', detail: "Ce projet est un site d'agence web fictive, réalisé dans le cadre de ma formation en web design et développement web"},
     { id: 3, title: "Portfolio-v1", url: 'https://jeanbaptisted760.promo-68.codeur.online/backoffice-portfolio/', detail: "Il s'agit de mon premier portfolio développé en HTML, CSS et Javascript administré dynamiquement par un système CRUD développé en PHP"},
     { id: 4, title: "MANGART", url: '', detail: "Site ecommerce proposant des affiches décoratives issues d'une rencontre entre l'art contemporain et l'univers du manga"},
-    { id: 5, title: "TWP", url: 'https://jeanbaptisted760.promo-68.codeur.online/jb-will/landingpage/index.php', detail: "Site web à l'aspect journalistique traitant des métiers du numérique. Il s'agit de mon premier projet, développé en HTML, CSS et intégrant l'utilisation du framework Bootstrap"}
+    { id: 5, title: "BREAK", url: 'https://jeanbaptisted760.promo-68.codeur.online/jb-will/landingpage/index.php', detail: "Site web ecommerce de boissons utilisant le système de gestion de contenu Shopify"}
   ];
 
-
+/* ====end projects===== */
 
 const Home = {
     template: '#home',
